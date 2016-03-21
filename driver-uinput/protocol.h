@@ -9,6 +9,8 @@
 #define EVENT_TYPE_MOTION 0
 #define EVENT_TYPE_BUTTON 1
 
+#include <stdint.h>
+
 typedef struct  
 {
 	int x;
