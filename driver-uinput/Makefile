@@ -1,8 +1,8 @@
 TARGET = networktablet
 PREFIX = /usr/local
 BINDIR = $(PREFIX)/bin
-
-networktablet : networktablet.c
+export CC=c99
+networktablet : networktablet.c protocol.h -lX11 -lXrandr 
 
 clean :
 	rm -f networktablet
